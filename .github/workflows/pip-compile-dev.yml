@@ -18,6 +18,7 @@ name: "Refresh dev dependencies"
   push:
     branches:
       - devel
+      - ci-test
     paths:
       - .github/workflows/reusable-pip-compile.yml
       - ".github/workflows/pip-compile-dev.yml"

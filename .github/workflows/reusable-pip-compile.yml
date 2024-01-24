@@ -104,6 +104,7 @@ jobs:
           #
           nox_args: "${{ inputs.nox-args }}"
         run: |
+          set -x
           nox ${nox_args}
       - name: Push new dependency versions and create a PR
         env:
