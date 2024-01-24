@@ -31,29 +31,6 @@ name: "Refresh pinned dependencies"
       reset-branch:
         type: boolean
         default: false
-  workflow_dispatch:
-    # inputs: *inputs
-    inputs:
-      message:
-        type: string
-        required: true
-      pr-branch:
-        type: string
-        required: true
-      base-branch:
-        type: string
-        required: true
-      nox-args:
-        type: string
-        required: true
-      changed-files:
-        default: "tests/*.txt"
-        type: string
-        required: false
-      reset-branch:
-        type: boolean
-        default: false
-
 jobs:
   refresh:
     runs-on: ubuntu-latest
